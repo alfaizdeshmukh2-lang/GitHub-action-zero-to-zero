@@ -20,7 +20,7 @@ jobs:
                               - name: Build and push to docker hub 
                                 uses: docker/build-push-action@v6
                                 with:
-                                        context: .
+                                        context: ./Dockerfile
                                         push: true
                                         tags: |
                                                   ${{ vars.DOCKERHUB_USER }}/github-actions-app:${{ github.ref_name }}
