@@ -20,7 +20,7 @@ jobs:
                               - name: Build and push to docker hub 
                                 uses: docker/build-push-action@v6
                                 with:
-                                        context: ./Dockerfile
+                                        context: C:\Users\alfai\Downloads\Github-action\GitHub-action-zero-to-zero\Dockerfile
                                         push: true
                                         tags: |
                                                   ${{ vars.DOCKERHUB_USER }}/github-actions-app:${{ github.ref_name }}
