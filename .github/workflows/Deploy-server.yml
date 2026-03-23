@@ -19,6 +19,6 @@ jobs:
 
                                         scripts: |
                                           echo "starting Deployment"
-                                          mkdir devops
+                                          mkdir -p devops
                                           
 
